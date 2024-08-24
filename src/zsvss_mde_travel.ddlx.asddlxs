@@ -1,0 +1,32 @@
+@Metadata.layer: #CORE
+@UI:{ headerInfo: {
+typeName: 'SVSS Travel',
+typeNamePlural: 'SVSS Travels' } }
+
+annotate entity ZCDS_SVSS_TRAVEL with
+{
+  @UI.lineItem: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  TravelId;
+  @UI.lineItem: [{ position: 20 }]
+  TotalPrice;
+  @UI.lineItem: [{ position: 30 }]
+  CurrencyCode;
+  @UI.lineItem: [{ position: 40 }]
+  TotalProceCurr;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.selectionField: [{ position: 20 }]
+  Description;
+  @UI.lineItem: [{ position: 60 }]
+  @UI.selectionField: [{ position: 30 }]
+  @UI.textArrangement: #TEXT_ONLY
+  Status;
+  @UI.lineItem: [{ position: 70 }]
+//      @UI.selectionField: [{ position: 40 }]
+      @UI.textArrangement: #TEXT_ONLY
+  OverallStatus;
+  /* Associations */
+//  @UI.lineItem: [{ position: 80 }]
+//  _status;
+
+}

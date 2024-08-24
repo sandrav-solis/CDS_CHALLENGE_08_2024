@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for travel structure'
+define service Zsvss_sd_travel {
+  expose ZCDS_SVSS_TRAVEL;
+}
